@@ -1,1 +1,1 @@
-# 33_02_git_exampleOfconflict
+ ### Example Of a conflict
