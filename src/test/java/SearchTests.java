@@ -6,16 +6,16 @@ import static com.codeborne.selenide.Selenide.open;
 public class SearchTests {
     @Test
     void successfulSearchTest() {
-        //Открыть google
+        //Open google
         open("https://www.google.com/");
 
-        //Отказаться от coockie
+        //Refuse от coockie
         $("#W0wltc > div").click();
 
-        // Ввести "selenide" в поиск
+        // Type "selenide" 
         $("[name=q]").setValue("selenide").pressEnter();
 
-        //Проверить что selenide появился в результатах поиска
+        //To check that selenide appeared as a result of a search
         $("[id=search]").shouldHave(text("https://selenide.org"));
     }
 
